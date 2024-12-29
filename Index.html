@@ -4,8 +4,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title> Busisiwe's Website</title>
-		<link rel="stylesheet" href="Styles/styling.css">
-		<script defer src= "Styles/script.js"> </script> 
+		<link rel="stylesheet" href="styling.css">
+		<script defer src= "script.js"> </script> 
 	</head>
 	<main>
 
@@ -14,9 +14,16 @@
 	
 		<h1 id = "test">Busisiwe Mitchell</h1>
 		<img id = "image" src="images/Strawhats.png" width="500px" height="200px"></img>
+		<!--<div class = "nav" id="nav">
+			<button class="toggle-btn" id="toggleBtn">☰</button>
+			<a href = "#Biography" class="current"> Biography</a> 
+			<a href = "#Projects"> Projects</a>
+			<a href = "#Contacts"> Contacts </a>
+		</div>-->
+
 		<nav>
 			<ul> 
-				<li><a href = "#Biography"> Biography</a> </li>
+				<li><a href = "#Biography" class="current"> Biography</a> </li>
 				<li><a href = "#Projects"> Projects</a></li>
 				<li><a href = "#Contacts"> Contacts </a></li>
 			</ul>
@@ -24,29 +31,43 @@
 
 		<!-- <button onclick = "sayHello()"> Click Me </button>-->
 		<!-- <button onclick = "SomeFunc()"> Add Image </button>-->
-		
-		<h3 id ="Biography"> Biography </h3> 
-		<p> I am currently a second year Computer science and Business Management student studying at the University of the Free State, In my spare time I love watching anime, reading novels and manga and listening to music.
+		<div class = "content" id="content">
+
+			<script>
+				const sidebar = document.getElementById('sidebar');
+				const content = document.getElementById('content');
+				const toggleBtn = document.getElementById('toggleBtn');
+			
+				toggleBtn.addEventListener('click', () => {
+					sidebar.classList.toggle('collapsed');
+					content.classList.toggle('collapsed');
+				});
+			</script>
+			
+			<h3 id ="Biography"> Biography </h3> 
+			<p> I am currently a second year Computer science and Business Management student studying at the University of the Free State, In my spare time I love watching anime, reading novels and manga and listening to music.
 			I was born in Bloemfontein and grew up in a town called Thaba Nchu in the Free State, I attended a Tlotlanang Combined School for all of my primary and high school years and matriculated there. I then went on to the 
 			University of the Witwatersrand intending to study a degree in civil engineering and during the course of my studies I was introduced to coding, that led to finding careers that involved programming and coding and that introduced me to 
 			Computer Science, I knew that was what I wanted to do, so I applied to study Computer Science at some Universities in 2022 and the UFS was the first one that got back to me. So I came to the UFS in the 2023 to study and I intend to get my 
 			degree.  
-		</p>
+			</p>
 
-		<h3 id = "Projects"> Projects </h3>
-		<p> 
+			<h3 id = "Projects"> Projects </h3>
+			<p> 
 			Project 1 : Temperature Converter
 			A simple temperature converter that takes a temperature value in degree celsius and will return the temperature in Fahrenheit and vice versa 
 
 			<a href = "https://github.com/BusiAkua/PRODIGY_SD_01"> Project File in Github</a>
-		</p>
+			</p>
 
-		<h3 id = "Contacts"> Contacts <h3>
-		<p>
+			<h3 id = "Contacts"> Contacts </h3>
+			<p>
 			 Cellphone Number: 0671967033
 			 <br>
 			 Email : <a href="mailto:busi.akua@gmail.com">Personal email address</a>
-		</p>
+			</p>
+
+		</div>
 
 	</body>
 	</main>

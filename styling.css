@@ -6,6 +6,55 @@ h1, h3 {
     color:saddlebrown;
 }
 
+img, h1 {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    border-radius: 300px;
+    border: 5px solid rgb(124, 57, 26);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+img:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Deepens the shadow on hover */
+}
+
+/*
+.nav{
+    width: 200px;
+    height:100vh;
+    background-color: rgb(124, 57, 26); 
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 8px rgb(104, 48, 22); 
+}
+
+.nav a {
+    color:rgb(218, 101, 59);
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: beige;
+    color: brown;
+}
+
+.nav a.current {
+    background-color: rgba(134, 57, 34, 0.849);
+}
+*/
+
 nav {
     background-color: rgb(124, 57, 26); /* Dark background */
     overflow: hidden;
@@ -48,7 +97,4 @@ a:hover {
     color: beige;
 }
 
-img, h1 {
-    max-width: 100%;
-    height: auto;
-}
+

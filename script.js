@@ -1,3 +1,5 @@
+
+
 //let name = "hello there"
 //name = "haha"
 
@@ -30,67 +32,67 @@
 //})
 
 //console.log(document.get)
-let Count = 0;
-setInterval(() => {
-  console.log(Count);
+//let Count = 0;
+//setInterval(() => {
+  //console.log(Count);
   //Count++;
-}, 1)
+//}, 1)
 
-const url = "https://restcountries.com/v3.1/all";
+//const url = "https://restcountries.com/v3.1/all";
 
-const changepic = (data) =>{
-    const SA = FindSA(data)
-    document.getElementById("image").src = SA.flags.png
+//const changepic = (data) =>{
+  //  const SA = FindSA(data)
+    //document.getElementById("image").src = SA.flags.png
     //SA.flags.png
 
 
-}
+//}
 
-const getSA = (arr) => arr.find(e => e.cca2 === "ZA");
+//const getSA = (arr) => arr.find(e => e.cca2 === "ZA");
 
-const FindSA = (array) =>{
-  array.find(e => e.cca2 === "ZA")
-  const ans = array.filter(e => e.region === "Africa")
-  for(let index=0; index < array.length; index ++)
-  {
-    const element = array[index]
-    if(element.cca2 === "ZA")
-    {
-      return element;
-    }
-  }
-}
+//const FindSA = (array) =>{
+  //array.find(e => e.cca2 === "ZA")
+  //const ans = array.filter(e => e.region === "Africa")
+  //for(let index=0; index < array.length; index ++)
+  //{
+    //const element = array[index]
+    //if(element.cca2 === "ZA")
+    //{
+      //return element;
+    //}
+  //}
+//}
 
-fetch(url).then((response)=>{
-  console.log(response);
-  response.json().then(data => {
-    console.log(data);
-    changepic(data);
-  });
-});
+//fetch(url).then((response)=>{
+  //console.log(response);
+  //response.json().then(data => {
+    //console.log(data);
+    //changepic(data);
+  //});
+//});
 //console.log(data);
 
-const payload = {
-  "userId": 1,
-  "id" : 1,
-  "title": "delectus aut autem",
-  "cpmleted" : false
-}
+//const payload = {
+  //"userId": 1,
+  //"id" : 1,
+  //"title": "delectus aut autem",
+  //"cpmleted" : false
+//}
 
-const requestOption = {
-  method: 'POST',
-  headers: {'Content-Type': 'application/json'},
+//const requestOption = {
+  //method: 'POST',
+  //headers: {'Content-Type': 'application/json'},
   
-  body: JSON.stringify(payload)
-}
+  //body: JSON.stringify(payload)
+//}
 
-const send = (task) =>{
-  fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(response => {
-        console.log(response)
-        response.json()})
-      .then(json => console.log(json))
-}
+//const send = (task) =>{
+  //fetch('https://jsonplaceholder.typicode.com/todos/1')
+    //  .then(response => {
+      //  console.log(response)
+      //  response.json()})
+      //.then(json => console.log(json))
+//}
 
 
 
